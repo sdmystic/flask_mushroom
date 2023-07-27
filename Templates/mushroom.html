@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Flask Form Example</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='./style.css')}}">
+  </head>
+  <body>
+    <h1>Flask Guess Form</h1>
+    <p>Info: {{info}}</p>
+    <form action="{{ url_for('predict_mushroom') }}" method="POST">
+      <label for="name">Mushrooms:</label>
+
+      <input type="text" name="cap-shape" id="cap-shape">
+      <input type="text" name="cap-surface" id="cap-surface">
+      <input type="text" name="cap-color" id="cap-color">
+      <input type="text" name="bruises" id="bruises">
+      <input type="text" name="odor" id="odor">
+      <input type="text" name="gill-attachment" id="gill-attachment">
+      <input type="text" name="gill-spacing" id="gill-spacing">
+      <input type="text" name="gill-size" id="gill-size">
+      <input type="text" name="gill-color" id="gill-color">
+      <input type="text" name="stalk-shape" id="stalk-shape">
+      <input type="text" name="stalk-root" id="stalk-root">
+      <input type="text" name="stalk-surface-above-ring" id="stalk-surface-above-ring">
+      <input type="text" name="stalk-surface-below-ring" id="stalk-surface-below-ring">
+      <input type="text" name="stalk-color-above-ring" id="stalk-color-above-ring">
+      <input type="text" name="stalk-color-below-ring" id="stalk-color-below-ring">
+      <input type="text" name="veil-type" id="veil-type">
+      <input type="text" name="veil-color" id="veil-color">
+      <input type="text" name="ring-number" id="ring-number">
+      <input type="text" name="ring-type" id="ring-type">
+      <input type="text" name="spore-print-color" id="spore-print-color">
+      <input type="text" name="population" id="population">
+      <input type="text" name="habitat" id="habitat">
+
+      <input type="submit" value="Submit" id="submit">
+
+    </form>
+  </body>
+</html>
+
+
