@@ -11,6 +11,27 @@
     <form action="{{ url_for('predict_mushroom') }}" method="POST">
       <label for="name">Mushrooms:</label>
 
+      <fieldset>
+        <legend>Select a cap-shape:</legend>
+    
+        <div>
+          <input type="radio" id="huey" name="drone" value="huey"
+                 checked>
+          <label for="huey">Huey</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="dewey" name="drone" value="dewey">
+          <label for="dewey">Dewey</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="louie" name="drone" value="louie">
+          <label for="louie">Louie</label>
+        </div>
+    </fieldset>
+    
+
       <input type="text" name="cap-shape" id="cap-shape">
       <input type="text" name="cap-surface" id="cap-surface">
       <input type="text" name="cap-color" id="cap-color">
